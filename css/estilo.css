@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {  
+    body {
+        font-size: 0.8rem;
+    }
+    h1, .h1 {
+        font-size: 1.5rem;
+    }
+      
+    h2, .h2 {
+        font-size: 1.25rem;
+      }
+      
+    h3, .h3 {
+        font-size: 1rem;
+      }
+      
+    h4, .h4 {
+        font-size: 0.85rem;
+    }
+      
+    h5, .h5 {
+        font-size: 0.75rem;
+    }
+      
+    h6, .h6 {
+        font-size: 0.65rem;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 1rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+
+}
+
+.text-header {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-jadedust {
+    background: #00d2d3;
+}
+.bg-aquavelvet {
+    background: #01a3a4;
+}
+.bg-wildcaribbeangreen {
+    background: #1dd1a1;
+}
+.bg-darkmountainmeadow {
+    background: #10ac84;
+}
+.bg-downloadprogress {
+    background: #4cd137;
+}
+.bg-navbar {
+    background-image: linear-gradient(#16a085,#4b4b4b);
+}
+.bg-header {
+    background-image: linear-gradient(to bottom right, #2ecc71, #00b894);
+}
+
+.mt-n5 {
+    margin-top: -3rem !important;
+  }
+
+  
