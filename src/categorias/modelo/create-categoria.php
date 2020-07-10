@@ -41,4 +41,4 @@ if(!$conexao){
 }
 
 
-echo json_encode($dados);
+echo json_encode($dados, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);

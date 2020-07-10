@@ -2,12 +2,8 @@
     include('../../banco/conexao.php');
 
     if($conexao){
-
-        $requestData = $_REQUEST;
-
-        $id = isset($requestData['idcategoria']) ? $requestData['idcategoria'] : '';
-
-        $sql = "SELECT * FROM CATEGORIAS WHERE IDCATEGORIA = $id ";
+        
+        $sql = "SELECT idcategoria, nome FROM categorias WHERE ativo = 'S' ";
         $resultado = mysqli_query($conexao, $sql);
 
         if($resultado && mysqli_num_rows($resultado) > 0){
