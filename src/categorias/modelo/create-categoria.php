@@ -40,4 +40,5 @@ if(!$conexao){
     mysqli_close($conexao);
 }
 
+
 echo json_encode($dados);

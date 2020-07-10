@@ -8,7 +8,7 @@ $(document).ready(function(){
 
         $('.modal-title').append('Vizualização de categoria')
 
-        let id categoria = `idcategoria=${$(this).attr('id')}`
+        let idcategoria = `idcategoria=${$(this).attr('id')}`
 
         $.ajax({
             type: 'POST',

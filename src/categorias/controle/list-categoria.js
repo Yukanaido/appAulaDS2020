@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('#table-categoria').DataTable((
+    $('#table-categoria').DataTable({
         "processing": true,
         "serverSide": true,
         "ajax": {
@@ -13,23 +13,27 @@ $(document).ready(function(){
             "data": "idcategoria",
             "className": "text-center"
         },
+        'columns': 
         {
             "data": "nome",
             "className": "text-center"
         },
+        'columns':
         {
             "data": "datamodificacao",
             "className": "text-center"
         },
+        'columns':
         {
             "data": "ativo",
             "orderable": false,
             "serchable": false,
-            "className": "text-center"
+            "className": "text-center",
             "render": function(data, type, row, meta){
                 return data = 'S' ? 'Ativo' : 'Não Ativo'
             }
         },
+        'columns':
         {
             "data": "idcategoria",
             "orderable": false,
@@ -44,5 +48,5 @@ $(document).ready(function(){
             }
         },
 
-    ))
+    })
 })
