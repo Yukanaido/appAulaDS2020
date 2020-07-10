@@ -2,7 +2,7 @@
     include('../../banco/conexao.php');
 
     if($conexao){
-        
+
         $sql = "SELECT idcategoria, nome FROM categorias WHERE ativo = 'S' ";
         $resultado = mysqli_query($conexao, $sql);
 
@@ -18,7 +18,7 @@
         } else{
             $dados = array(
                 "tipo" => "info",
-                "mensagem" => "Não possível localizar a categoria.",
+                "mensagem" => "Não possível conecar ao banco de dados.",
                 "dados" => array()
             );
 
@@ -29,7 +29,7 @@
     } else{
         $dados = array(
             "tipo" => "error",
-            "mensagem" => "Não possível conectar ao banco de dados",
+            "mensagem" => "Não possível localizar a categoria",
             "dados" => array()
         );
     }
