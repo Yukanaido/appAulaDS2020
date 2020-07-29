@@ -22,7 +22,7 @@ if(!$conexao){
             'mensagem' => 'Existe(m) campo(s) obrigatório(s) vazio(s).'
     } else{
 
-        $sqlComando = "INSERT INTO CATEGORIAS(nome), ativo, datacriacao, datamodificacao
+        $sqlComando = "INSERT INTO categorias(nome), ativo, datacriacao, datamodificacao
         VALUES ('$requestData[nome]', '$requestData[ativo], '$requestData[dataagora], '$requestData[dataagora]')";
 
         $resultado = mysqli_query($conexao, $sqlComando);

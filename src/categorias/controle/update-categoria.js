@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.btn-save').click(function(e){
+    $('.btn-update').click(function(e){
         e.preventDefault()
 
         let dados = $('#form-categoria').serialize()
@@ -15,7 +15,7 @@ $(document).ready(function(){
             dataType: 'json',
             assync: true, 
             data: dados,
-            url: 'src/categorias/modelo/create-categoria.php',
+            url: 'src/categorias/modelo/update-categoria.php',
             success: function(dados){
                 Swal.fire({
                     title: 'appAulaDS',
