@@ -7,7 +7,7 @@
         $resultado = mysqli_query($conexao, $sql);
 
         if($resultado && mysqli_num_rows($resultado) > 0){
-            while($linha = mysqli_fetch_assoc(%resultado)){
+            while($linha = mysqli_fetch_assoc($resultado)){
                 $dadosCategoria = array_map('utf8_encode', $linha);
             }
             $dados = array(
