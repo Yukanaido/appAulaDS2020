@@ -10,7 +10,7 @@ $(document).ready(function(){
         const datacricao = new Date().toLocaleString()
 
         $('.modal-body').load('src/categorias/visao/form-categoria.html', function(){
-            $('#dataagora').val(datacriacao)
+            $('#dataagora').val(dataagora)
         })
 
         $('.btn-save').show()
